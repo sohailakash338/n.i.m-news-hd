@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>NIM NEWS HD - Press Verification</title>
+<title>NIM NEWS HD | Official Press Verification</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
 <style>
 
@@ -12,85 +15,189 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Segoe UI,Arial,sans-serif;
 }
 
 body{
 
 background:
+radial-gradient(circle at top,#10335d 0%,#07172f 50%,#030914 100%);
+
+color:#fff;
+
+}
+
+.container{
+
+max-width:1280px;
+margin:auto;
+padding:30px 20px 80px;
+
+}
+
+
+/* HEADER */
+
+.hero{
+
+background:
 linear-gradient(
-135deg,
-#061C3A,
-#0E2C57,
-#C00017
+180deg,
+rgba(255,255,255,.97),
+rgba(244,247,252,.96)
 );
 
-min-height:100vh;
-padding:40px;
+border-radius:32px;
 
-}
-
-.wrapper{
-
-max-width:1200px;
-
-margin:auto;
-
-}
-
-.header{
-
-background:white;
-
-border-radius:20px;
-
-padding:35px;
+padding:50px;
 
 text-align:center;
 
 box-shadow:
-0 15px 40px rgba(0,0,0,.25);
+0 35px 70px rgba(0,0,0,.35);
+
+border:1px solid rgba(255,255,255,.5);
 
 }
 
 .logo{
 
-width:250px;
-
-margin-bottom:20px;
+width:330px;
+max-width:90%;
 
 }
 
-.title{
+.portal{
 
-font-size:40px;
+margin-top:18px;
+
+font-size:52px;
 
 font-weight:900;
 
-color:#052A55;
+color:#0b2d58;
+
+line-height:1.1;
+
+}
+
+.portal span{
+
+color:#c4001d;
 
 }
 
 .subtitle{
 
-color:#666;
+margin-top:14px;
 
-margin-top:10px;
+font-size:19px;
+
+color:#666;
 
 }
 
-.verify-box{
 
-margin-top:40px;
+/* TOP INFO */
 
-background:white;
+.top{
 
-padding:40px;
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:18px;
+
+margin-top:28px;
+
+}
+
+.item{
+
+background:
+rgba(255,255,255,.08);
+
+padding:24px;
 
 border-radius:20px;
 
+backdrop-filter:blur(14px);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+}
+
+.item h3{
+
+color:#fff;
+
+margin-bottom:8px;
+
+}
+
+.item p{
+
+color:#b8c5d7;
+
+}
+
+
+/* VERIFY */
+
+.verify{
+
+margin-top:34px;
+
+background:#fff;
+
+border-radius:32px;
+
+padding:50px;
+
+color:#0b2244;
+
 box-shadow:
-0 10px 30px rgba(0,0,0,.2);
+0 20px 60px rgba(0,0,0,.30);
+
+}
+
+.verify-title{
+
+font-size:42px;
+
+font-weight:900;
+
+text-align:center;
+
+}
+
+.verify-title span{
+
+color:#c00018;
+
+}
+
+.line{
+
+width:110px;
+
+height:5px;
+
+background:
+
+linear-gradient(
+90deg,
+#082952,
+#d1001f
+);
+
+margin:
+18px auto 40px;
+
+border-radius:50px;
 
 }
 
@@ -98,84 +205,272 @@ box-shadow:
 
 width:100%;
 
-padding:18px;
+height:72px;
 
-font-size:20px;
+border:2px solid #d8e0ea;
 
-border:
+border-radius:18px;
 
-2px solid #003366;
+padding:0 28px;
 
-border-radius:12px;
+font-size:22px;
+
+outline:none;
+
+}
+
+.input:focus{
+
+border-color:#113f76;
 
 }
 
 .btn{
 
-margin-top:20px;
+margin-top:22px;
 
 width:100%;
 
-padding:18px;
+height:74px;
+
+border:none;
+
+border-radius:18px;
+
+font-size:24px;
+
+font-weight:800;
+
+color:#fff;
+
+cursor:pointer;
 
 background:
 
 linear-gradient(
 90deg,
-#D1001F,
-#002D62
+#082952,
+#d1001f
 );
 
-color:white;
+}
 
-font-size:22px;
+.btn:hover{
 
-font-weight:700;
-
-border:none;
-
-border-radius:12px;
-
-cursor:pointer;
+transform:translateY(-2px);
 
 }
+
+
+/* RESULT */
 
 .result{
 
 display:none;
 
-margin-top:40px;
+margin-top:36px;
 
 }
 
 .card{
 
-background:white;
+overflow:hidden;
 
-border-radius:18px;
+border-radius:30px;
 
-padding:30px;
+background:#fff;
+
+color:#0b2244;
+
+box-shadow:
+0 30px 60px rgba(0,0,0,.25);
+
+}
+
+.head{
+
+padding:24px 36px;
+
+background:
+
+linear-gradient(
+90deg,
+#082952,
+#0b4d94
+);
 
 display:flex;
 
-gap:30px;
+justify-content:space-between;
 
-box-shadow:
-0 10px 30px rgba(0,0,0,.25);
+align-items:center;
+
+}
+
+.verified{
+
+background:#1fa85a;
+
+padding:10px 18px;
+
+border-radius:50px;
+
+font-weight:700;
+
+}
+
+.active{
+
+font-weight:800;
+
+}
+
+.content{
+
+display:grid;
+
+grid-template-columns:
+320px 1fr;
+
+padding:36px;
+
+gap:34px;
 
 }
 
 .photo{
 
-width:250px;
+width:100%;
 
-border-radius:15px;
+border-radius:18px;
 
 }
 
-.data{
+.name{
 
-flex:1;
+font-size:54px;
+
+font-weight:900;
+
+}
+
+.name span{
+
+color:#c00018;
+
+}
+
+.position{
+
+margin-top:8px;
+
+font-size:20px;
+
+color:#607080;
+
+}
+
+.grid{
+
+margin-top:26px;
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:18px;
+
+}
+
+.box{
+
+background:#f7f9fc;
+
+padding:18px;
+
+border-radius:14px;
+
+}
+
+.label{
+
+font-size:14px;
+
+color:#7c8794;
+
+}
+
+.value{
+
+margin-top:8px;
+
+font-size:22px;
+
+font-weight:800;
+
+}
+
+.notice{
+
+margin-top:28px;
+
+background:#f4f8fc;
+
+padding:24px;
+
+border-left:5px solid #d1001f;
+
+border-radius:14px;
+
+line-height:1.8;
+
+}
+
+
+/* FOOTER */
+
+.footer{
+
+margin-top:30px;
+
+padding:36px;
+
+background:
+rgba(255,255,255,.08);
+
+border-radius:24px;
+
+text-align:center;
+
+color:#d2dbea;
+
+}
+
+
+@media(max-width:850px){
+
+.portal{
+
+font-size:34px;
+
+}
+
+.top{
+
+grid-template-columns:1fr;
+
+}
+
+.content{
+
+grid-template-columns:1fr;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
 
 }
 
@@ -183,59 +478,13 @@ flex:1;
 
 font-size:40px;
 
-color:#D1001F;
-
-font-weight:900;
-
 }
 
-.row{
+.verify{
 
-margin-top:15px;
-
-font-size:22px;
+padding:26px;
 
 }
-
-.badge{
-
-margin-top:20px;
-
-display:inline-block;
-
-background:#052A55;
-
-color:white;
-
-padding:12px 22px;
-
-border-radius:10px;
-
-}
-
-.footer{
-
-margin-top:40px;
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
-}
-
-.footer h2{
-
-color:#D1001F;
-
-}
-
-.footer p{
-
-margin-top:12px;
-
-line-height:1.9;
 
 }
 
@@ -245,106 +494,238 @@ line-height:1.9;
 
 <body>
 
-<div class="wrapper">
+<div class="container">
 
-<div class="header">
 
-<img
-class="logo"
-src="logo.png">
+<div class="hero">
 
-<div class="title">
+<img src="logo.png" class="logo">
+
+<div class="portal">
+
 PRESS MEDIA
-VERIFICATION
+
+<span>VERIFICATION</span>
+
+PORTAL
+
 </div>
 
 <div class="subtitle">
 
-Official Digital Card Verification Portal
+Official Digital Identity Verification System
 
 </div>
 
 </div>
 
 
-<div class="verify-box">
+<div class="top">
+
+<div class="item">
+
+<h3>Official Verification</h3>
+
+<p>Authenticated media identity records</p>
+
+</div>
+
+<div class="item">
+
+<h3>Secure System</h3>
+
+<p>Protected verification process</p>
+
+</div>
+
+<div class="item">
+
+<h3>Instant Result</h3>
+
+<p>Live press card validation</p>
+
+</div>
+
+</div>
+
+
+
+<div class="verify">
+
+<div class="verify-title">
+
+VERIFY PRESS <span>CARD</span>
+
+</div>
+
+<div class="line"></div>
+
 
 <input
-
-class="input"
-
 id="pressid"
-
+class="input"
 placeholder="Enter Press ID">
 
 <button
-
 class="btn"
-
 onclick="verify()">
 
-VERIFY CARD
+VERIFY NOW
 
 </button>
 
 
+
 <div
 class="result"
-
 id="show">
 
+
 <div class="card">
+
+<div class="head">
+
+<div class="verified">
+
+✓ VERIFIED
+
+</div>
+
+<div class="active">
+
+STATUS : ACTIVE
+
+</div>
+
+</div>
+
+
+
+<div class="content">
+
+<div>
 
 <img
 src="photo.jpg"
 class="photo">
 
-<div class="data">
+</div>
+
+
+
+<div>
 
 <div class="name">
 
-NABEEL KHAN
+NABEEL <span>KHAN</span>
 
 </div>
 
-<div class="badge">
+<div class="position">
 
-CEO
+Chief Executive Officer
 
 </div>
 
-<div class="row">
 
-PRESS ID :
+<div class="grid">
+
+<div class="box">
+
+<div class="label">
+
+PRESS ID
+
+</div>
+
+<div class="value">
+
 NIM-500200
 
 </div>
 
-<div class="row">
+</div>
 
-CNIC :
+
+
+<div class="box">
+
+<div class="label">
+
+CNIC
+
+</div>
+
+<div class="value">
+
 4240195258487
 
 </div>
 
-<div class="row">
+</div>
 
-PHONE :
+
+<div class="box">
+
+<div class="label">
+
+PHONE
+
+</div>
+
+<div class="value">
+
 03293053932
 
 </div>
 
-<div class="row">
+</div>
 
-CITY :
+
+<div class="box">
+
+<div class="label">
+
+CITY
+
+</div>
+
+<div class="value">
+
 KARACHI
 
 </div>
 
-<div class="row">
+</div>
 
-VALID TILL :
+
+<div class="box">
+
+<div class="label">
+
+VALID TILL
+
+</div>
+
+<div class="value">
+
 01 JULY 2027
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="notice">
+
+This press identity card is digitally verified and officially recognized by NIM NEWS HD.
+
+Unauthorized use or duplication may result in cancellation.
+
+</div>
 
 </div>
 
@@ -359,36 +740,23 @@ VALID TILL :
 
 <div class="footer">
 
-<h2>
-
-PRESS CARD INFORMATION
-
-</h2>
-
-<p>
-
-This digital verification portal confirms that the holder of this press identity card is officially registered with Press Media Network.
-
-Any unauthorized duplication, misuse, editing or publication of this card without permission may result in cancellation.
-
-For verification support contact official administration.
-
-</p>
+© NIM NEWS HD — Official Press Verification Portal
 
 </div>
 
 </div>
+
 
 <script>
 
 function verify(){
 
 let id=
-
 document
 .getElementById(
 "pressid"
 ).value
+.trim();
 
 if(
 id==="NIM-500200"
@@ -399,7 +767,23 @@ document
 "show"
 )
 .style
-.display="block"
+.display=
+"block";
+
+window
+.scrollTo({
+
+top:
+document
+.getElementById(
+"show"
+)
+.offsetTop-100,
+
+behavior:
+"smooth"
+
+});
 
 }
 
@@ -407,7 +791,7 @@ else{
 
 alert(
 "Invalid Press ID"
-)
+);
 
 }
 
@@ -416,5 +800,4 @@ alert(
 </script>
 
 </body>
-
 </html>
