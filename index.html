@@ -1,30 +1,420 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Multan Express</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>NIM NEWS HD - Press Verification</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#061C3A,
+#0E2C57,
+#C00017
+);
+
+min-height:100vh;
+padding:40px;
+
+}
+
+.wrapper{
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.header{
+
+background:white;
+
+border-radius:20px;
+
+padding:35px;
+
+text-align:center;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+width:250px;
+
+margin-bottom:20px;
+
+}
+
+.title{
+
+font-size:40px;
+
+font-weight:900;
+
+color:#052A55;
+
+}
+
+.subtitle{
+
+color:#666;
+
+margin-top:10px;
+
+}
+
+.verify-box{
+
+margin-top:40px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.input{
+
+width:100%;
+
+padding:18px;
+
+font-size:20px;
+
+border:
+
+2px solid #003366;
+
+border-radius:12px;
+
+}
+
+.btn{
+
+margin-top:20px;
+
+width:100%;
+
+padding:18px;
+
+background:
+
+linear-gradient(
+90deg,
+#D1001F,
+#002D62
+);
+
+color:white;
+
+font-size:22px;
+
+font-weight:700;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+}
+
+.result{
+
+display:none;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:18px;
+
+padding:30px;
+
+display:flex;
+
+gap:30px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.photo{
+
+width:250px;
+
+border-radius:15px;
+
+}
+
+.data{
+
+flex:1;
+
+}
+
+.name{
+
+font-size:40px;
+
+color:#D1001F;
+
+font-weight:900;
+
+}
+
+.row{
+
+margin-top:15px;
+
+font-size:22px;
+
+}
+
+.badge{
+
+margin-top:20px;
+
+display:inline-block;
+
+background:#052A55;
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:10px;
+
+}
+
+.footer{
+
+margin-top:40px;
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.footer h2{
+
+color:#D1001F;
+
+}
+
+.footer p{
+
+margin-top:12px;
+
+line-height:1.9;
+
+}
+
+</style>
+
 </head>
+
 <body>
-<header>
-<h1>DAILY MULTAN EXPRESS</h1>
-<p>سچ کی رفتار</p>
-</header>
 
-<main>
-<h2>خوش آمدید</h2>
-<p>یہ ڈیلی ملتان ایکسپریس کی نمونہ ویب سائٹ ہے۔</p>
+<div class="wrapper">
 
-<h3>ادارے کی معلومات</h3>
-<p>یہاں آپ ادارے، نمائندگان، پریس کارڈ ویریفکیشن اور رابطہ معلومات شامل کر سکتے ہیں۔</p>
+<div class="header">
 
-<h3>پریس کارڈ ویریفکیشن</h3>
-<p>اس صفحے کو QR کوڈ کے ساتھ منسلک کیا جا سکتا ہے۔</p>
-</main>
+<img
+class="logo"
+src="logo.png">
 
-<footer>
-<p>© Daily Multan Express</p>
-</footer>
+<div class="title">
+PRESS MEDIA
+VERIFICATION
+</div>
+
+<div class="subtitle">
+
+Official Digital Card Verification Portal
+
+</div>
+
+</div>
+
+
+<div class="verify-box">
+
+<input
+
+class="input"
+
+id="pressid"
+
+placeholder="Enter Press ID">
+
+<button
+
+class="btn"
+
+onclick="verify()">
+
+VERIFY CARD
+
+</button>
+
+
+<div
+class="result"
+
+id="show">
+
+<div class="card">
+
+<img
+src="photo.jpg"
+class="photo">
+
+<div class="data">
+
+<div class="name">
+
+NABEEL KHAN
+
+</div>
+
+<div class="badge">
+
+CEO
+
+</div>
+
+<div class="row">
+
+PRESS ID :
+NIM-500200
+
+</div>
+
+<div class="row">
+
+CNIC :
+4240195258487
+
+</div>
+
+<div class="row">
+
+PHONE :
+03293053932
+
+</div>
+
+<div class="row">
+
+CITY :
+KARACHI
+
+</div>
+
+<div class="row">
+
+VALID TILL :
+01 JULY 2027
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<h2>
+
+PRESS CARD INFORMATION
+
+</h2>
+
+<p>
+
+This digital verification portal confirms that the holder of this press identity card is officially registered with Press Media Network.
+
+Any unauthorized duplication, misuse, editing or publication of this card without permission may result in cancellation.
+
+For verification support contact official administration.
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function verify(){
+
+let id=
+
+document
+.getElementById(
+"pressid"
+).value
+
+if(
+id==="NIM-500200"
+){
+
+document
+.getElementById(
+"show"
+)
+.style
+.display="block"
+
+}
+
+else{
+
+alert(
+"Invalid Press ID"
+)
+
+}
+
+}
+
+</script>
+
 </body>
+
 </html>
